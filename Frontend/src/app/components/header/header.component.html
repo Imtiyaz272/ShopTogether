@@ -1,0 +1,36 @@
+<nav class="w-full flex justify-between items-center p-5 bg-indigo-500 shadow-2xl">
+    <div class="logo">
+        <ng-container *ngIf="!isLoggedIn">
+            <span routerLink="/welcome" class="text-gray-200 text-4xl flex justify-start items-center hover:cursor-pointer">MyProject</span> 
+        </ng-container>
+        <ng-container *ngIf="isLoggedIn">
+       <span routerLink="/home" class="text-gray-200 text-4xl flex justify-start items-center hover:cursor-pointer">MyProject</span> 
+    </ng-container>
+    </div>
+    <div class="flex items-center w-1/3 border-2  border-blue-600">
+      <span class="absolute mt-1.5 mx-3"><i class="fa-brands fa-searchengin font-light"></i></span>
+      <input type="text" placeholder="Search Product" #friendInput class="w-full p-2 pl-9 rounded-l text-gray-600 focus:border-blue-600 focus:outline-none">
+      <button class="bg-slate-400 p-2 text-white outline-none outline-0 " >Search</button>
+  </div>
+    <div class="nav-items flex">
+        <ng-container *ngIf="!isLoggedIn">
+            <span routerLink="/login" class="text-xl cursor-pointer text-gray-200 font-bold m-3 hover:underline hover:text-indigo-200">Login</span>
+        <span routerLink="/register" class="text-xl cursor-pointer text-gray-200 font-bold m-3 hover:underline hover:text-indigo-200">Register</span>
+        </ng-container>
+        <ng-container *ngIf="isLoggedIn">
+            <span routerLink="/cart" class="text-xl cursor-pointer text-gray-200 font-bold m-3 hover:underline hover:text-indigo-200">Cart</span>
+            <div class="relative group">
+                <button class="text-xl cursor-pointer text-gray-200 font-bold m-3 hover:underline hover:text-indigo-200">
+                  ShopTogether
+                </button>
+                <div class="absolute w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-hover:visible">
+                  <a (click)="showCreateCart()" class="cursor-pointer block px-4 py-1 border-2 border-gray-400 font-size:18px text-blue-600 hover:bg-gray-100">Create a Cart</a>
+                  <a (click)="showJoinCart()" class="cursor-pointer block px-4 py-1 border-t-0 border-2 border-gray-400 font-size:18px text-blue-600 hover:bg-gray-100">Join a Cart</a>
+                </div>
+              </div>
+            <span routerLink="/login" 
+            (click)="logout()"
+            class="text-xl cursor-pointer text-gray-200 font-bold m-3 hover:underline hover:text-indigo-200">Logout</span>
+        </ng-container>
+    </div>
+</nav>
