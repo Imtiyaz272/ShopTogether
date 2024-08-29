@@ -1,0 +1,15 @@
+<ng-container *ngIf="product">
+<div class="relative flex flex-col mt-10 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 border-2 border-blue-700">
+  
+      <img [src]="product.image" alt="card-image" class="w-full h-72 object-contain"/>
+
+    <div class="p-6 pt-0 flex justify-between mt-2">
+      <h5 class="block  font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+         {{product.name}}
+      </h5>
+      <span class="block font-sans text-xl antialiased font-light leading-relaxed text-blue-gray-500">
+        {{product.price | currency}}
+      </span>
+    </div>
+  </div>  
+</ng-container>
