@@ -1,0 +1,75 @@
+[
+{
+    "name": "Laptop",
+    "price": 1200,
+    "quantity":10,
+    "category":"Electronics",
+    "rating": 4.5,
+    "image": "product-1.jpg"
+   
+  },
+  {
+    "name": "Smartphone",
+    "price": 800,
+    "quantity":20,
+    "category":"Electronics",
+    "rating": 3.8,
+    "image": "product-2.jpg"
+  },
+  {
+    "name": "Desk Chair",
+    "price": 150,
+    "quantity":30,
+    "category":"Furniture",
+    "rating": 4.2,
+    "image": "product-3.jpg"
+   
+  },
+  {
+    "name": "Running Shoes",
+    "price": 120,
+    "quantity":40,
+    "category":"Footwear",
+    "rating": 3.9,
+    "image": "product-4.jpg"
+   
+  },
+  {
+    "name": "Coffee Maker",
+    "price": 80,
+    "quantity":10,
+    "category":"Kitchen",
+    "rating": 4.3,
+    "image": "product-5.jpg"
+   
+  },
+  {
+    "name": "Gaming Mouse",
+    "price": 60,
+    "quantity":20,
+    "category":"Electronics",
+    "rating": 4.6,
+    "image": "product-6.jpg"
+   
+  },
+  {
+    "name": "Headphones",
+    "price": 150,
+    "quantity":90,
+    "category":"Electronics",
+    "rating": 4.4,
+    "image": "product-7.jpg"
+   
+   
+  },
+  {
+    "name": "Television",
+    "price": 1000,
+    "quantity":18,
+    "category":"Electronics",
+    "rating": 4.9,
+    "image": "product-8.jpg"
+   
+    
+  }
+]
