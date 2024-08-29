@@ -1,0 +1,7 @@
+<div class="container mt-6 mx-auto grid grid-cols-3">
+  <ng-container *ngFor="let product of products" >
+     <a [routerLink]= "['/product-page', product._id]">
+     <app-product-card [product]="product"></app-product-card>
+    </a>
+  </ng-container>
+</div>
